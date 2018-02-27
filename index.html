@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+  <link href='./assets/css/map.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div id="birdseye-chloropleth-map"></div>
+  <div class='map-overlay' id='features'>
+    <h2>NumObs within regions</h2>
+    <div class='session'>
+      <div class='row colors'></div>
+      <div class='row labels'>
+        <div class='label'>1</div>
+        <div class='label'>5</div>
+        <div class='label'>10</div>
+        <div class='label'>15</div>
+        <div class='label'>20</div>
+        <div class='label'>25+</div>
+      </div>
+
+    </div>
+    <div id='pd'>
+      <p>Hover over a region!</p>
+    </div>
+    <!--     
+    <div class='session' id='sliderbar'>
+        <h3>Day: <label id='active-day'>2018-02-05 07:00:00</label></h3>
+        <input id='slider' class='row', type='range', min='2018-02-04 15:00:00', max='2018-02-05 15:00:00'
+    </div> 
+    -->
+  </div>
+  
+  <script src=./assets/js/map.js></script>
+</body>
+</html>
